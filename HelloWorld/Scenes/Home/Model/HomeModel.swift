@@ -5,4 +5,6 @@
 //  Created by Alumnos on 23/03/26.
 //
 
-import Foundation
+struct HomeModel {
+    var user: User //no inicializado
+}
