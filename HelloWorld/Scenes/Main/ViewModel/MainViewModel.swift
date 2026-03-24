@@ -12,6 +12,8 @@ class MainViewModel {
     
     //Contenedor de una clase observable (Observador)
     @Published var isValidForm: Bool = false
+    @Published var isUserNameValid: Bool = false
+    @Published var isPasswordValid: Bool = false
     
     var user: User {
         get { model.user }
@@ -19,8 +21,14 @@ class MainViewModel {
     }
     
     func validateForm() {
-        print("User \(user)")
-        isValidForm = !(user.name.isEmpty && user.password.isEmpty)
-        print("isValid: \(isValidForm)")
+        isValidForm = isUserNameValid || isPasswordValid
+    }
+    
+    func validateUserName() {
+        isUserNameValid = !user.name.isEmpty
+    }
+    
+    func validatePassword() {
+        isPasswordValid = !user.password.isEmpty
     }
 }

@@ -15,6 +15,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tfPassword: UITextField!
     
     @IBOutlet weak var btnLogin: UIButton!
+    
+    @IBOutlet weak var labelErrorUsername: UILabel!
+    @IBOutlet weak var labelErrorPassword: UILabel!
 
     //MARK: - Propiedades privadas
     private let viewModel = MainViewModel()
@@ -48,12 +51,26 @@ class MainViewController: UIViewController {
                 self.btnLogin.isEnabled = isValid
             }
             .store(in: &cancellable)
+        
+        viewModel.$isUserNameValid
+            .sink { [weak self] isValid in
+                guard let self else { return }
+                self.labelErrorUsername.text = isValid ? nil : "El usuario no puede estar vacío"
+            }
+            .store(in: &cancellable)
+        
+        viewModel.$isPasswordValid
+            .sink { [weak self] isValid in
+                guard let self else { return }
+                self.labelErrorPassword.text = isValid ? nil : "La contraseña no puede estar vacía"
+            }
+            .store(in: &cancellable)
     }
     
     @IBAction func loginTapped() {
         guard let navigationController = navigationController else { return }
         let storyBoardName = "Main" //Nombre del archivo del storyboard
-        let id = "Second"
+        let id = "Home"
         
         let secondVC = UIStoryboard(
             name: storyBoardName,
@@ -61,7 +78,10 @@ class MainViewController: UIViewController {
         ).instantiateViewController(
                 identifier: id
         ) { coder in
-            return UIViewController(coder: coder)
+            self.viewModel.user.name = "David"
+            let model = HomeModel(user: self.viewModel.user)
+            let viewModel = HomeViewModel(model: model)
+            return HomeViewController(coder: coder, viewModel: viewModel)
         }
         
         navigationController.pushViewController(secondVC, animated: true)
@@ -85,10 +105,14 @@ extension MainViewController : UITextFieldDelegate {
         
         if tfUser == textField {
             viewModel.user.userName = updatedText
+            viewModel.validateUserName()
         }
         else if tfPassword == textField {
             viewModel.user.password = updatedText
+            viewModel.validatePassword()
         }
+        
+        
         viewModel.validateForm()
         
         return true
