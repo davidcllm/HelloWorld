@@ -101,10 +101,12 @@ extension MainViewController : UITextFieldDelegate {
         //Calculamos el texto
         let currentText = textField.text ?? ""
         guard let range = Range(range, in: currentText) else { return false } // preguntar si es diferente de nulo
-        let updatedText = currentText.replacingCharacters(in: range, with: currentText)
+        let updatedText = currentText.replacingCharacters(in: range, with: string)
         
         if tfUser == textField {
-            viewModel.user.userName = updatedText
+            var u = viewModel.user
+            u.userName = updatedText
+            viewModel.user = u
             viewModel.validateUserName()
         }
         else if tfPassword == textField {

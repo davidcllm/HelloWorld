@@ -6,6 +6,7 @@
 //
 
 import Combine
+import Foundation
 
 class MainViewModel {
     var model = MainModel()
@@ -21,14 +22,14 @@ class MainViewModel {
     }
     
     func validateForm() {
-        isValidForm = isUserNameValid || isPasswordValid
+        isValidForm = isUserNameValid && isPasswordValid
     }
     
     func validateUserName() {
-        isUserNameValid = !user.name.isEmpty
+        isUserNameValid = !user.userName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
-    
+
     func validatePassword() {
-        isPasswordValid = !user.password.isEmpty
+        isPasswordValid = !user.password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 }
