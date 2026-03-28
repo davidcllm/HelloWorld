@@ -55,8 +55,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMh-zR-4Ws">
-                                <rect key="frame" x="135" y="697" width="122.66666666666666" height="34.333333333333371"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMh-zR-4Ws">
+                                <rect key="frame" x="135.33333333333334" y="725.66666666666663" width="122.66666666666666" height="34.333333333333371"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Iniciar sesión"/>
@@ -64,12 +64,8 @@
                                     <action selector="loginTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="EX4-Ht-WLB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qf-dU-gZd">
-                                <rect key="frame" x="138" y="740" width="111" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="111" id="MBO-PM-W6K"/>
-                                    <constraint firstAttribute="height" constant="35" id="aYQ-2q-39I"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qf-dU-gZd">
+                                <rect key="frame" x="135" y="764" width="123" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Registrarse"/>
                                 <connections>
@@ -88,7 +84,10 @@
                             <constraint firstItem="PIr-eE-3Jy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Tc7-WI-uJ6"/>
                             <constraint firstItem="PIr-eE-3Jy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="WN3-l1-mML"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yMh-zR-4Ws" secondAttribute="bottom" constant="24" id="XY8-Hk-NHv"/>
+                            <constraint firstItem="5qf-dU-gZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="fBr-gQ-Qla"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xvi-ww-6RN" secondAttribute="trailing" constant="148" id="fvk-eT-e2I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5qf-dU-gZd" secondAttribute="trailing" constant="135" id="mLM-XS-txe"/>
+                            <constraint firstItem="5qf-dU-gZd" firstAttribute="top" secondItem="yMh-zR-4Ws" secondAttribute="bottom" constant="4" id="nLf-jd-zuW"/>
                             <constraint firstItem="c33-HO-Moz" firstAttribute="top" secondItem="xvi-ww-6RN" secondAttribute="bottom" constant="12" id="p4G-s3-U0n"/>
                             <constraint firstItem="c33-HO-Moz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="snK-rH-CAz"/>
                         </constraints>
@@ -125,7 +124,6 @@
         <!--View Controller-->
         <scene sceneID="5YC-s5-erH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z5h-yD-gr2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="F7l-up-iZQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D2t-R5-wki">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -135,6 +133,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rIh-eV-wKc"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5h-yD-gr2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4250" y="-275"/>
         </scene>
