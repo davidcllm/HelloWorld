@@ -225,13 +225,13 @@
         <!--Main View Controller-->
         <scene sceneID="Dhb-CU-ZdN">
             <objects>
-                <viewController id="zrm-7U-qEB" userLabel="Main View Controller" customClass="MainViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zrm-7U-qEB" userLabel="Main View Controller" customClass="RegisterViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bn7-TV-2sy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eEz-DS-b06">
-                                <rect key="frame" x="48" y="304.33333333333326" width="297" height="379.66666666666674"/>
+                                <rect key="frame" x="48" y="304.33333333333326" width="297" height="349.66666666666674"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ret-c4-OSD">
                                         <rect key="frame" x="0.0" y="0.0" width="297" height="34"/>
@@ -239,52 +239,52 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKE-pF-YXG">
-                                        <rect key="frame" x="0.0" y="46" width="297" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="46" width="297" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0U-Tk-bZb">
-                                        <rect key="frame" x="0.0" y="78.333333333333371" width="297" height="34"/>
+                                        <rect key="frame" x="0.0" y="72.333333333333371" width="297" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tk-gp-6SP">
-                                        <rect key="frame" x="0.0" y="124.33333333333336" width="297" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="118.33333333333337" width="297" height="14.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nyR-dH-IJf">
-                                        <rect key="frame" x="0.0" y="156.66666666666669" width="297" height="34"/>
+                                        <rect key="frame" x="0.0" y="144.66666666666669" width="297" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL4-PA-k9j">
-                                        <rect key="frame" x="0.0" y="202.66666666666669" width="297" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="190.66666666666669" width="297" height="14.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sZo-tB-BWC">
-                                        <rect key="frame" x="0.0" y="235.00000000000006" width="297" height="34"/>
+                                        <rect key="frame" x="0.0" y="217.00000000000006" width="297" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fL0-fW-FcF">
-                                        <rect key="frame" x="0.0" y="281.00000000000006" width="297" height="20.333333333333314"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="263.00000000000006" width="297" height="14.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirmar contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWG-Os-wtc">
-                                        <rect key="frame" x="0.0" y="313.33333333333331" width="297" height="34"/>
+                                        <rect key="frame" x="0.0" y="289.33333333333331" width="297" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fq3-em-Hz7">
-                                        <rect key="frame" x="0.0" y="359.33333333333331" width="297" height="20.333333333333314"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="335.33333333333331" width="297" height="14.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -324,11 +324,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="dVp-a3-sgi"/>
                     <connections>
-                        <outlet property="btnLogin" destination="mWz-Xm-865" id="jyW-Mk-Ykj"/>
-                        <outlet property="labelErrorPassword" destination="xL4-PA-k9j" id="lNf-LN-wIT"/>
-                        <outlet property="labelErrorUsername" destination="2Tk-gp-6SP" id="E10-oN-oXR"/>
-                        <outlet property="tfPassword" destination="nyR-dH-IJf" id="eQx-X0-0DF"/>
-                        <outlet property="tfUser" destination="G0U-Tk-bZb" id="Y1l-sB-zEm"/>
+                        <outlet property="btnRegisterForm" destination="mWz-Xm-865" id="Fh4-88-ADJ"/>
+                        <outlet property="lblError1" destination="kKE-pF-YXG" id="QAV-la-6ql"/>
+                        <outlet property="lblError2" destination="2Tk-gp-6SP" id="OQm-sx-iKl"/>
+                        <outlet property="lblError3" destination="xL4-PA-k9j" id="qOp-vW-avi"/>
+                        <outlet property="lblError4" destination="fL0-fW-FcF" id="Hj8-bN-0RE"/>
+                        <outlet property="lblError5" destination="Fq3-em-Hz7" id="UQ8-cq-FC7"/>
+                        <outlet property="tfConfirmPassword" destination="xWG-Os-wtc" id="LEQ-sP-znM"/>
+                        <outlet property="tfLastName" destination="nyR-dH-IJf" id="Gol-CH-u7C"/>
+                        <outlet property="tfName" destination="G0U-Tk-bZb" id="6RJ-Oo-16w"/>
+                        <outlet property="tfPassword" destination="sZo-tB-BWC" id="MB9-6k-jcW"/>
+                        <outlet property="tfUsername" destination="Ret-c4-OSD" id="oHq-V9-Pfo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnU-4k-toi" sceneMemberID="firstResponder"/>
