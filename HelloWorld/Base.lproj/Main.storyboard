@@ -56,7 +56,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMh-zR-4Ws">
-                                <rect key="frame" x="135.33333333333334" y="725.66666666666663" width="122.66666666666666" height="34.333333333333371"/>
+                                <rect key="frame" x="135" y="731.33333333333337" width="123" height="34.333333333333371"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Iniciar sesión"/>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qf-dU-gZd">
-                                <rect key="frame" x="135" y="764" width="123" height="34.333333333333371"/>
+                                <rect key="frame" x="135" y="769.66666666666663" width="123" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Registrarse"/>
                                 <connections>
@@ -77,18 +77,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c33-HO-Moz" secondAttribute="trailing" constant="48" id="BM1-0P-Ns7"/>
-                            <constraint firstItem="PIr-eE-3Jy" firstAttribute="centerX" secondItem="yMh-zR-4Ws" secondAttribute="centerX" id="Bh5-PH-Ikf"/>
                             <constraint firstItem="xvi-ww-6RN" firstAttribute="top" secondItem="PIr-eE-3Jy" secondAttribute="bottom" constant="24" id="D8I-EH-liB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yMh-zR-4Ws" secondAttribute="trailing" constant="135" id="DHO-EY-Ga6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PIr-eE-3Jy" secondAttribute="trailing" constant="16" id="Ihg-rq-fBl"/>
                             <constraint firstItem="xvi-ww-6RN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="150" constant="148" id="Jsb-0c-dKO"/>
                             <constraint firstItem="PIr-eE-3Jy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Tc7-WI-uJ6"/>
                             <constraint firstItem="PIr-eE-3Jy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="WN3-l1-mML"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yMh-zR-4Ws" secondAttribute="bottom" constant="24" id="XY8-Hk-NHv"/>
                             <constraint firstItem="5qf-dU-gZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="fBr-gQ-Qla"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xvi-ww-6RN" secondAttribute="trailing" constant="148" id="fvk-eT-e2I"/>
+                            <constraint firstAttribute="bottom" secondItem="5qf-dU-gZd" secondAttribute="bottom" constant="48" id="lcJ-Sz-xHt"/>
+                            <constraint firstItem="yMh-zR-4Ws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="luU-4q-W5b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5qf-dU-gZd" secondAttribute="trailing" constant="135" id="mLM-XS-txe"/>
-                            <constraint firstItem="5qf-dU-gZd" firstAttribute="top" secondItem="yMh-zR-4Ws" secondAttribute="bottom" constant="4" id="nLf-jd-zuW"/>
                             <constraint firstItem="c33-HO-Moz" firstAttribute="top" secondItem="xvi-ww-6RN" secondAttribute="bottom" constant="12" id="p4G-s3-U0n"/>
+                            <constraint firstItem="5qf-dU-gZd" firstAttribute="top" secondItem="yMh-zR-4Ws" secondAttribute="bottom" constant="4" id="sbE-i2-FaA"/>
                             <constraint firstItem="c33-HO-Moz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="snK-rH-CAz"/>
                         </constraints>
                     </view>
