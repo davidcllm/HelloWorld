@@ -7,10 +7,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    //MARK: - Componentes visuales
-    @IBOutlet weak var labelName: UILabel!
-    
+class HomeViewController: UITabBarController {
+        
     //MARK: - Propiedades privadas
     private let viewModel: HomeViewModel
     
@@ -24,8 +22,11 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelName .text = viewModel.name
+        
+        navigationItem.setHidesBackButton(true, animated: false)
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
 }

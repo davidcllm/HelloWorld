@@ -9,6 +9,8 @@ import Foundation
 
 struct User {
     var name: String = ""
-    var password: String = ""
     var userName: String = ""
+    var lastName: String = ""
+    var password: String = ""
+    var confirmPassword: String = ""
 }
