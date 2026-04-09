@@ -12,6 +12,8 @@ import AVFoundation
 class ProfileViewController: UIViewController {
     var player: AVPlayer? // Reproductor de música
     
+    @IBOutlet weak var image: UIImageView!
+    
     // MARK: - DID LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,5 +87,65 @@ class ProfileViewController: UIViewController {
         
         player.pause()
         self.player = nil
+    }
+    
+    @IBAction func photoTapped() {
+        let alert = UIAlertController(
+            title: "Select image from:",
+            message: nil,
+            preferredStyle: .actionSheet
+        )
+        
+        let cameraAction = UIAlertAction(
+            title: "Camera",
+            style: .default
+        ) { (action) in
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                let vc = UIImagePickerController()
+                vc.sourceType = .camera
+                vc.allowsEditing = true
+                vc.delegate = self
+                self.present(vc, animated: true)
+            }
+            
+        }
+        
+        let fototecaAction = UIAlertAction(
+            title: "Photo Library",
+            style: .default
+        ) { (action) in
+            if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+                let vc = UIImagePickerController()
+                vc.sourceType = .photoLibrary
+                vc.allowsEditing = true
+                vc.delegate = self
+                self.present(vc, animated: true)
+            }
+            
+        }
+        
+        alert.addAction(cameraAction)
+        alert.addAction(fototecaAction)
+        
+        present(alert, animated: true)
+    }
+}
+
+// MARK: - extension
+extension ProfileViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+        //validar que sea una imagen
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+        
+        self.image.image = image
+        
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true)
     }
 }
